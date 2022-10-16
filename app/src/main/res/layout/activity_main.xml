@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="3"
+    tools:context=".MainActivity">
+
+
+    <GridLayout
+        android:layout_width="200dp"
+        android:layout_height="273dp"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="4"
+            android:text="@string/_00"
+            android:textAlignment="textEnd"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/Button111"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/Button112"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/Button04"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/Button05"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/Button06"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/Button07"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/Button08"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/Button10"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/Button12"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/Button09"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/Button11"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/Button13"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="="
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/Button14"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            tools:ignore="TouchTargetSizeCheck" />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
