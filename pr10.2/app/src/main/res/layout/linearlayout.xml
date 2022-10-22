@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="195dp"
+                android:layout_height="75dp"
+                android:text="ORIENT"
+                android:onClick="orientVertical"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="198dp"
+                android:layout_height="80dp"
+                android:text="GRAVITY"
+                android:onClick="gravityLeft"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ORIENT"
+                android:onClick="orientHorizontal"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="GRAVITY"
+                android:onClick="gravityCenter"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="188dp"
+                android:layout_height="74dp"
+                android:text="ORIENT"
+                android:onClick="orientVertical"
+                />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="186dp"
+                android:layout_height="66dp"
+                android:text="GRAVITY"
+                android:onClick="gravityRight"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Ориентация" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="83dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Выравнивание" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
