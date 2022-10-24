@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Practice9</string>
+    <string name="view_name">Лабораторная работа № 9</string>
+    <string name="textView_name">Copyright (C) 2021</string>
+    <string name="Bunin">"""
+        Листопад И.А.Бунин
+Лес, точно терем расписной,
+Лиловый, золотой, багряный,
+Веселой, пестрою стеной
+Стоит над светлою поляной.
+   """ </string>
+
+    <color name="blue">#1199C6</color>
+</resources>
