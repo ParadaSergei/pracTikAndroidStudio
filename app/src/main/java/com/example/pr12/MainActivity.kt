@@ -8,11 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {
-    val check1:CheckBox = findViewById(R.id.checkBox)
-    val check2:CheckBox = findViewById(R.id.checkBox2)
-    val check3:CheckBox = findViewById(R.id.checkBox3)
-    var bool:Boolean = false
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,49 +19,54 @@ class MainActivity : AppCompatActivity() {
         photo.setImageResource(image)
         photo.setContentDescription(description)
     }
-    fun pear(view:View){
+    fun pear(view: View){
         val photo:ImageView = findViewById(R.id.imageView)
         val image:Int = R.drawable.pear
         val description:String = "Pear"
         photo.setImageResource(image)
         photo.setContentDescription(description)
     }
-    fun grape(view: View){
+    fun grape(view: View) {
         val photo:ImageView = findViewById(R.id.imageView)
         val image:Int = R.drawable.grape
         val description:String = "Grape"
         photo.setImageResource(image)
         photo.setContentDescription(description)
     }
-    fun pearCheck(view: View){
-        var imageView4:ImageView = findViewById(R.id.imageView4)
+    fun Check(view: View) {
+            when (view.id) {
+                R.id.checkAppl -> {
+                    val imageView: ImageView = findViewById(R.id.imageView2)
+                    val checkBox: CheckBox = findViewById(R.id.checkAppl)
+                    if (checkBox.isChecked ==true) {
+                        imageView.setImageResource(R.drawable.apple)
+                    } else {imageView.setImageResource(0)
 
-    if (check1.isChecked == true){
-    imageView4.setVisibility(View.VISIBLE)
+                    }
+                }
+                R.id.checkVino -> {
+                    val imageView: ImageView = findViewById(R.id.imageView3)
+                    val checkBox: CheckBox = findViewById(R.id.checkVino)
+                    if (checkBox.isChecked ==true) {
+                        imageView.setImageResource(R.drawable.grape)
+                    } else {
+                        imageView.setImageResource(0)
+                    }
+                }
+                R.id.checkGru -> {
+                    val imageView: ImageView = findViewById(R.id.imageView4)
+                    val checkBox: CheckBox = findViewById(R.id.checkGru)
+                    if (checkBox.isChecked ==true) {
+                        imageView.setImageResource(R.drawable.pear)
+                    } else {
+                        imageView.setImageResource(0)
+                    }
+                }
+
+
+            }
+
+
+    }
+
 }
-        else{
-    imageView4.setVisibility(View.GONE)
-
-        }
-    }
-    fun grapeCheck(view: View) {
-        var imageView3:ImageView = findViewById(R.id.imageView3)
-        if (check2.isChecked == true){
-            imageView3.setVisibility(View.VISIBLE)
-        }
-        else{
-            imageView3.setVisibility(View.GONE)
-        }
-    }
-    fun appleCheck(view: View){
-        var imageView2:ImageView = findViewById(R.id.imageView2)
-        if (check3.isChecked == true){
-            imageView2.setVisibility(View.VISIBLE)
-        }
-        else{
-            imageView2.setVisibility(View.GONE)
-        }
-
-
-
-}}

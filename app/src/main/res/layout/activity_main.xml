@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/green">
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -57,70 +58,67 @@
         app:srcCompat="@drawable/apple" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkAppl"
         android:checked="false"
         android:layout_width="108dp"
         android:layout_height="48dp"
         android:layout_marginTop="52dp"
         android:text="Яблоко"
-        android:onClick="appleCheck"
-        app:layout_constraintStart_toStartOf="@+id/checkBox2"
+        android:onClick="Check"
+        app:layout_constraintStart_toStartOf="@+id/checkGru"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkVino"
         android:layout_width="108dp"
         android:checked="false"
         android:layout_height="49dp"
         android:layout_marginTop="12dp"
         android:text="Виноград"
-        android:onClick="grapeCheck"
-        app:layout_constraintStart_toStartOf="@+id/checkBox3"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        android:onClick="Check"
+        app:layout_constraintStart_toStartOf="@+id/checkGru"
+        app:layout_constraintTop_toBottomOf="@+id/checkAppl" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/checkGru"
         android:layout_width="107dp"
         android:checked="false"
         android:layout_height="49dp"
         android:layout_marginTop="12dp"
         android:text="Груша"
-        android:onClick="pearCheck"
+        android:onClick="Check"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/checkVino" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="134dp"
-        android:layout_height="130dp"
+        android:layout_width="122dp"
+        android:layout_height="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3"
-        app:srcCompat="@drawable/apple"
-        android:visibility="invisible"/>
+        app:layout_constraintTop_toBottomOf="@+id/checkGru"
+        app:layout_constraintVertical_bias="0.277" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="20dp"
-        android:visibility="invisible"
+        android:layout_width="122dp"
+        android:layout_height="112dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3"
-        app:srcCompat="@drawable/grape" />
+        app:layout_constraintTop_toBottomOf="@+id/checkGru"
+        app:layout_constraintVertical_bias="0.277" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="123dp"
-        android:layout_height="131dp"
+        android:layout_width="117dp"
+        android:layout_height="113dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3"
-        app:layout_constraintVertical_bias="0.488"
-        app:srcCompat="@drawable/pear"
-        android:visibility="invisible"/>
+        app:layout_constraintTop_toBottomOf="@+id/checkGru"
+        app:layout_constraintVertical_bias="0.282" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
