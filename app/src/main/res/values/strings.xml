@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Конверт валют</string>
+    <string name="btn">Конвертировать</string>
+    <string name="text">Результат:</string>
+    <string name="kurs">Введите курс обмена $:</string>
+    <string name="summa">Введите сумму:</string>
+</resources>
