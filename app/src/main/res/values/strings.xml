@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Данные о животном</string>
+    <string name="views">Посмотреть данные</string>
+</resources>
