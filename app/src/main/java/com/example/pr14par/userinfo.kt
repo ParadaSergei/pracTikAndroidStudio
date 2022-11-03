@@ -16,21 +16,20 @@ class userinfo : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_userinfo)
         val argument : Bundle? = intent.extras
-        var emailText : EditText = findViewById(R.id.emailEditText)
-        var nameText : EditText = findViewById(R.id.nameEditText)
-        var ageText : EditText = findViewById(R.id.ageTextNumber)
+        val emailText : EditText = findViewById(R.id.emailEditText)
+        val nameText : EditText = findViewById(R.id.nameEditText)
+        val ageText : EditText = findViewById(R.id.ageTextNumber)
         if (argument != null) {
             emailText.setText(argument.get("email").toString())
             nameText.setText(argument.get("name").toString())
             ageText.setText(argument.get("age").toString())
         }
     }
-
     fun transitions(view: View) {
         val argument : Bundle? = intent.extras
-        var emailText : EditText = findViewById(R.id.emailEditText)
-        var nameText : EditText = findViewById(R.id.nameEditText)
-        var ageText : EditText = findViewById(R.id.ageTextNumber)
+        val  emailText : EditText = findViewById(R.id.emailEditText)
+        val  nameText : EditText = findViewById(R.id.nameEditText)
+        val  ageText:EditText = findViewById(R.id.ageTextNumber)
         val intent = Intent(this@userinfo, MainActivity::class.java)
         if(emailText.text.isNotEmpty() && nameText.text.isNotEmpty() && ageText.text.isNotEmpty())
         {
@@ -43,6 +42,8 @@ class userinfo : AppCompatActivity() {
 
                 if(ageText.text.toString() != argument.get("age").toString()) intent.putExtra("age", "* ${ageText.text.toString()}")
                 else intent.putExtra("age", ageText.text.toString())
+                val bool:String = "true"
+                intent.putExtra("second", bool.toString())
                 startActivity(intent)
             }
         }
