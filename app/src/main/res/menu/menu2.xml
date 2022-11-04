@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/program"
+        android:title="@string/oprogramm">
+        <menu>
+            <item
+                android:id="@+id/dark"
+                android:title="@string/whitetem"/>
+        </menu>
+    </item>
+</menu>
