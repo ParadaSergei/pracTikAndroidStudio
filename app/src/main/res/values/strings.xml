@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">pr18-19</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Здась будет инфа</string>
+    <string name="mastif">
+Английский мастиф – настоящий герой сказок о мирных великанах!
+В противовес грозному и внушительному виду
+эта собака отличается мягким и добродушным нравом.
+</string>
+    <string name="ovcharka">
+Кавказская овчарка или кавказский волкодав – порода
+крупных сторожевых собак с решительным, бесстрашным характером.
+Отлично справляются с пастушеской и охранной деятельностью.
+Преданы одному хозяину.
+</string>
+    <string name="textview">TextView</string>
+    <string name="ovcharkas">ovha</string>
+    <string name="mastifs">mastifs</string>
+    <string name="windowinfo">Окно информации</string>
+</resources>
